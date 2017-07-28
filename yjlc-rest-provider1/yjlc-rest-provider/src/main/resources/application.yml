@@ -1,0 +1,13 @@
+server:
+  port: 7002
+### 服务提供者的虚拟IP
+spring:
+  application:
+    name: yjlc-provider
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:123456@localhost:8761/eureka/
+instance:
+    preferIpAddress: true
